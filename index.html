@@ -45,7 +45,8 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#about">Integrations</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -77,9 +78,15 @@
               </h1>
 
               <p class="mb-4 mb-md-5">
-                Our company builds AI agents for cybersecurity powered by a domain‑specialized model compatible with llama.cpp, Ollama, and LM Studio for efficient on‑prem and edge inference. These agents inherit deep coverage of NIST CSF 2.0, SP 800‑53, Zero Trust (SP 800‑207), RMF, and FIPS/PQC from training on 530k+ examples across 596 NIST publications, enabling policy‑aware reasoning, control mapping, and standards‑aligned guidance directly inside security workflows. 
-Deployed as vertical software components, they integrate with CTI platforms using STIX 2.1/TAXII and stream APIs to enrich indicators, TTPs, and knowledge graphs—accelerating triage and threat investigation while preserving traceability to sources. Our GGUF‑based quantizations (Q4_K_M/Q5_K_M/Q8_0) balance speed and quality on CPU‑first infrastructure, keeping real‑time analysis feasible without dedicated GPUs. 
-By aligning detection, risk management, and automated response with authoritative NIST guidance and modern TIPs, our agents elevate SIEM and CTI outcomes from raw alerts to actionable, standards‑conformant decisions—supporting security and resilience for critical operations.
+                Our company builds AI agents for cybersecurity powered by a domain‑specialized model compatible with llama.cpp, Ollama, and LM Studio for efficient on‑prem and edge inference. 
+                <br><br>
+                These agents inherit deep coverage of NIST CSF 2.0, SP 800‑53, Zero Trust (SP 800‑207), RMF, and FIPS/PQC from training on 530k+ examples across 596 NIST publications, enabling policy‑aware reasoning, control mapping, and standards‑aligned guidance directly inside security workflows. 
+                <br><br>
+                Deployed as vertical software components, they integrate with CTI platforms using STIX 2.1/TAXII and stream APIs to enrich indicators, TTPs, and knowledge graphs—accelerating triage and threat investigation while preserving traceability to sources. 
+                <br><br>
+                Our GGUF‑based quantizations (Q4_K_M/Q5_K_M/Q8_0) balance speed and quality on CPU‑first infrastructure, keeping real‑time analysis feasible without dedicated GPUs. 
+                <br><br>
+                By aligning detection, risk management, and automated response with authoritative NIST guidance and modern TIPs, our agents elevate SIEM and CTI outcomes from raw alerts to actionable, standards‑conformant decisions—supporting security and resilience for critical operations.
 
               </p>
 
@@ -113,9 +120,13 @@ By aligning detection, risk management, and automated response with authoritativ
           <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
             <span class="about-meta">INTEGRATIONS</span>
             <h2 class="about-title">Wazuh + OpenCTI/MISP — Native Integrations for Actionable Intelligence</h2>
-            <p class="about-description">Our agents plug into Wazuh, the open‑source unified XDR/SIEM, to enhance threat hunting through its built‑in MITRE ATT&CK module, mapping alerts to tactics and techniques and leveraging Wazuh’s file integrity monitoring, configuration assessment, and automated responses. This alignment provides immediate adversary‑behavior context and faster containment when signals surface on endpoints or servers. 
-For OpenCTI, we support stream and enrichment connectors so that new indicators and entities create sightings against Wazuh telemetry and remain linked within OpenCTI’s STIX 2.1 knowledge graph. Where appropriate, we use the opencti‑wazuh connector to look up Wazuh events and generate correlated sightings in OpenCTI, while also enabling downstream delivery to SIEMs via OpenCTI’s live streams (e.g., Splunk/Elastic) for continuous indicator matching. 
-For MISP, we support STIX/TAXII ingestion and the newer TAXII push flow so curated events, tags, and attributes feed detection at scale; we also leverage Wazuh’s integration patterns to check hashes/IOCs from MISP during real‑time alerting. This bi‑directional loop keeps detections current and enriches cases with provenance and confidence metadata.
+            <p class="about-description">Our agents plug into Wazuh, the open‑source unified XDR/SIEM, to enhance threat hunting through its built‑in MITRE ATT&CK module, mapping alerts to tactics and techniques and leveraging Wazuh’s file integrity monitoring, configuration assessment, and automated responses. 
+                <br><br>
+                This alignment provides immediate adversary‑behavior context and faster containment when signals surface on endpoints or servers. 
+                <br><br>
+                For OpenCTI, we support stream and enrichment connectors so that new indicators and entities create sightings against Wazuh telemetry and remain linked within OpenCTI’s STIX 2.1 knowledge graph. Where appropriate, we use the opencti‑wazuh connector to look up Wazuh events and generate correlated sightings in OpenCTI, while also enabling downstream delivery to SIEMs via OpenCTI’s live streams (e.g., Splunk/Elastic) for continuous indicator matching. 
+                <br><br>
+                For MISP, we support STIX/TAXII ingestion and the newer TAXII push flow so curated events, tags, and attributes feed detection at scale; we also leverage Wazuh’s integration patterns to check hashes/IOCs from MISP during real‑time alerting. This bi‑directional loop keeps detections current and enriches cases with provenance and confidence metadata.
               </p>
               
 
@@ -176,75 +187,428 @@ For MISP, we support STIX/TAXII ingestion and the newer TAXII push flow so curat
 
 
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <span class="about-meta">FEATURES</span>
+        <h2 class="about-title">AI Models & Agents Features</h2>
+        <p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>NIST&#8209;grounded
+expertise, ready on day one</span></b><span lang=EN-US style='mso-ansi-language:
+EN-US'><br>
+Our agents are powered by <span class=SpellE><b>Hack</b></span><b>&#8209;NIST&#8209;Coder
+v1.2 (GGUF)</b>—a domain&#8209;specialized LLM fine&#8209;tuned on <b>530,912
+examples across 596 NIST publications</b>, spanning <b>CSF 2.0</b>, <b>SP 800&#8209;53</b>,
+<b>Zero Trust (SP 800&#8209;207)</b>, <b>RMF</b>, <b>FIPS cryptography</b>, and
+<b>post&#8209;quantum migration guidance</b>. This foundation lets the <span
+class=GramE>agents</span> reason with authoritative controls, cite specific
+sections, and produce policy&#8209;aligned recommendations without external
+knowledge bases. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Long&#8209;context
+reasoning for complex SOC &amp; GRC workflows</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+The model supports up to <b>32k tokens of context</b>, enabling multi&#8209;document
+investigations (e.g., alerts + playbooks + standards <span class=GramE>excerpts</span>)
+while maintaining citations and control mappings. Teams can paste entire
+incident timelines or RMF packages and still receive structured, standards&#8209;referenced
+outputs. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Efficient
+on&#8209;prem/edge inference (CPU&#8209;first), air&#8209;gap friendly</span></b><span
+lang=EN-US style='mso-ansi-language:EN-US'><br>
+Delivered in <b>GGUF</b>, the agents run efficiently via <b>llama.cpp</b>, <span
+class=SpellE><b>Ollama</b></span>, and <b>LM Studio</b> with <span
+class=SpellE>quantizations</span> like <b>Q4_K_M, Q5_K_M, Q8_0, F16</b> to
+balance speed and quality. GGUF embeds both tensors and metadata for fast
+loading and reproducible behavior across executors—ideal for air&#8209;gapped
+SOCs, ICS/OT networks, and regulated environments. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Zero
+Trust &amp; CSF 2.0 workflows baked in</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+Coverage includes <b>CSF 2.0 (GOVERN function)</b> and <b>Zero Trust
+Architecture (SP 800&#8209;207)</b>, enabling the agent to propose control
+implementations, gap analyses, POA&amp;Ms, and cross&#8209;walks between
+policies, safeguards, and detection content. This makes audit prep and design
+reviews faster and traceable to NIST source texts. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>SIEM
+&amp; CTI enrichment using STIX 2.1/TAXII &amp; live streams</span></b><span
+lang=EN-US style='mso-ansi-language:EN-US'><br>
+Agents speak <b>STIX 2.1</b> natively and operate with <b>TAXII</b> feeds, <span
+class=SpellE>OpenCTI</span> <b>live streams</b>, and CSV feeds to automate
+indicator ingestion, enrichment, and distribution—keeping detections current
+while preserving provenance, confidence levels, and expiration semantics. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span lang=EN-US style='mso-ansi-language:
+EN-US'>OpenCTI</span></b></span><b><span lang=EN-US style='mso-ansi-language:
+EN-US'> integration — sightings, knowledge graph, and downstream SIEMs</span></b><span
+lang=EN-US style='mso-ansi-language:EN-US'><br>
+With <span class=SpellE><b>OpenCTI</b></span><b> connectors</b>, new indicators
+and entities can trigger <b>sightings</b> against telemetry, staying linked in
+the <b>STIX 2.1 knowledge graph</b>. Stream connectors forward curated
+intelligence to SIEMs such as Splunk and Elastic, maintaining bi&#8209;directional
+synchronization for indicator match rules and alerting. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>MISP
+integration — TAXII push, enrichment modules, and STIX conversion</span></b><span
+lang=EN-US style='mso-ansi-language:EN-US'><br>
+We support <b>MISP TAXII push</b> to publish curated events as <b>STIX bundles</b>
+and leverage <span class=SpellE><b>misp</b></span><b>&#8209;modules</b> for
+enrichment (e.g., hashes, domains). This keeps detections fresh across
+platforms and reduces the lag between threat discovery and operationalization. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span lang=EN-US style='mso-ansi-language:
+EN-US'>Wazuh</span></b></span><b><span lang=EN-US style='mso-ansi-language:
+EN-US'> alignment — ATT&amp;CK mapping, file integrity, configuration
+assessment, and response</span></b><span lang=EN-US style='mso-ansi-language:
+EN-US'><br>
+Deployed alongside <span class=SpellE><b>Wazuh</b></span>, agents augment its <b>MITRE
+ATT&amp;CK module</b> by explaining tactics, techniques, mitigations, and
+references directly in alerts. Combined with <span class=SpellE>Wazuh’s</span>
+FIM/SCA and automated response capabilities, analysts receive behavior&#8209;centric
+insights and guided remediation steps. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Indicator
+lifecycle, confidence, and expiration management</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+The agents manage indicator lifecycles (creation, enrichment, de&#8209;duplication,
+expiration) consistent with <span class=SpellE><b>OpenCTI</b></span><b> streams</b>,
+<b>TAXII collections</b>, and <b>MISP tagging</b>, carrying confidence levels,
+source attribution, and TLP markings into SIEM matching policies. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Auditability
+and end&#8209;to&#8209;end traceability</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+Outputs include <b>citations to NIST controls</b> and standards sections, with
+clear rationales and references. In regulated environments, this supports <b>audit
+trails</b>, evidence collection, and control justification for RMF
+authorizations and CSF&#8209;aligned governance reporting. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Developer&#8209;friendly
+and portable</span></b><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+Ready&#8209;to&#8209;use snippets (<span class=SpellE>Modelfiles</span>, CLI
+examples) let engineers evaluate locally and embed agents in pipelines and SOC
+tooling. Guidance on quantization (start with <b>Q4_K_M</b> for best overall
+balance) streamlines deployment on commodity hardware across Linux/macOS. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Open
+content licensing for NIST materials</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+The model leverages public&#8209;domain NIST publications; the card clarifies
+permissive usage for research and commercial deployments, simplifying legal
+review and enterprise adoption.<o:p></o:p></span></p>
+
+
+
+        <div class="d-flex justify-content-center">
+          <img src="assets/img/SOC.jpg" alt="" class="img-fluid align-items-center">
+        </div>
+      </div>
+
+    </section>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+    
+          <div class="container" data-aos="fade-up">
+        <h2 class="about-title">Expanded Feature Highlights</h2>
+        
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Knowledge
+completeness across NIST corpus</span></b><span lang=EN-US style='mso-ansi-language:
+EN-US'><br>
+Beyond controls, the training set includes <b>SP 1800 practice guides</b>, <b>interagency
+reports (IR)</b>, and <b>white papers (CSWP)</b>—covering implementation patterns,
+architectural choices, supply&#8209;chain risk, cloud security, and digital
+identity. This breadth underpins sound recommendations across hybrid
+environments and OT networks. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Graph&#8209;aware
+CTI operations</span></b><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+In <span class=SpellE><b>OpenCTI</b></span>, the agent leverages the STIX
+hypergraph to connect observables to campaigns, malware families, and threat
+actors, recommending pivots and adding sightings automatically. Stream
+connectors distribute updates in near real&#8209;time to SIEMs, avoiding
+polling-heavy integrations. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Elastic/Splunk
+indicator ingestion and matching</span></b><span lang=EN-US style='mso-ansi-language:
+EN-US'><br>
+By consuming <b>OpenCTI’s indicator data streams</b>, Elastic Security and
+Splunk can apply indicator match rules to generate alerts, while the agent
+correlates hits back to TTPs and NIST mitigations—closing the loop from
+detection to control action. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>MISP
+export/import and TAXII interop</span></b><span lang=EN-US style='mso-ansi-language:
+EN-US'><br>
+Teams can tag events for export, convert to <b>STIX 2.x</b> via <b>misp&#8209;stix</b>,
+and publish over <b>TAXII 2.1</b> to non&#8209;MISP platforms. The agent
+respects tagging, filtering, and feed selection to prevent noisy distribution
+and to keep CTI consistent across tools. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Wazuh
+deep usage — Sysmon, ATT&amp;CK, and rule tuning</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+With <b>Sysmon</b> telemetry and ATT&amp;CK mapping in Wazuh, the agent
+recommends rule tuning and enrichment (e.g., registry, process creation) and
+links detections to mitigations and control requirements (SP 800&#8209;53).
+This guidance accelerates threat hunting and reduces false positives. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>On&#8209;prem
+privacy &amp; resilience</span></b><span lang=EN-US style='mso-ansi-language:
+EN-US'><br>
+Because inference runs locally via GGUF, sensitive logs and indicators never
+leave your environment. Quantized variants allow <b>CPU&#8209;only</b>
+operation—even in constrained ICS/OT segments—while maintaining workable
+throughput for SOC workflows.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Operational
+excellence — tokens/sec and deployment patterns</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+The model card documents performance and recommended quantizations; starting
+with <b>Q4_K_M</b> typically offers the best speed/quality ratio, with <b>Q5_K_M/Q8_0</b>
+for higher fidelity. Deployments via <b>Ollama</b> or <b>llama.cpp</b> provide
+reproducible setups for dev, test, and prod. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Standards&#8209;aligned
+remediation playbooks</span></b><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+For each finding, the agent maps mitigations to <b>CSF</b> functions and <b>SP
+800&#8209;53</b> control families, proposes validation checks, and suggests
+reporting structures (e.g., artifacts for RMF authorization or CSF governance
+dashboards). <span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Flexible
+integration choices</span></b><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+Whether you prefer <b>OpenCTI live streams</b>, <b>TAXII collections</b>, or
+direct <b>CSV feeds</b>, the platform supports multiple distribution methods so
+SOCs can choose between push, pull, and streaming models—reducing integration
+friction across existing tool stacks. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Connector
+ecosystem and future&#8209;proofing</span></b><span lang=EN-US
+style='mso-ansi-language:EN-US'><br>
+OpenCTI’s connector ecosystem continues to expand (Splunk, Elastic, Sentinel,
+QRadar), and community projects such as the <b>opencti&#8209;wazuh connector</b>
+deepen bi&#8209;directional use cases. Our agents are designed to slot into
+these flows without proprietary <span class=GramE>lock&#8209;in</span>. <o:p></o:p></span></p>
+
+      </div>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+          <div class="container" data-aos="fade-up">
+        <h2 class="about-title">Models Overview</h2>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Model
+Overview <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Fine-tuned
+on 530,912 examples from 596 NIST publications. </span>Version 1.1 <span
+class=SpellE>includes</span>:<o:p></o:p></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b>+7,206
+     training <span class=SpellE>examples</span></b> (530,912 <span
+     class=SpellE>total</span>)<o:p></o:p></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b>+28
+     new <span class=SpellE>documents</span></b> (596 NIST <span class=SpellE>publications</span>)<o:p></o:p></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='mso-ansi-language:EN-US'>CSWP series</span></b><span
+     lang=EN-US style='mso-ansi-language:EN-US'>: CSF 2.0, Zero Trust
+     Architecture, Post-Quantum Cryptography<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='mso-ansi-language:EN-US'>Improved quality</span></b><span
+     lang=EN-US style='mso-ansi-language:EN-US'>: Fixed 6,150 malformed DOI
+     links, 0 broken link markers<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span class=SpellE><b>Available</b></span><b> <span
+class=SpellE>Quantizations</span> <o:p></o:p></b></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-yfti-tbllook:1184'>
+ <thead>
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><span class=SpellE><b>Quantization</b></span><b><o:p></o:p></b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Size<o:p></o:p></b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Use Case<o:p></o:p></b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><span class=SpellE><b>Description</b></span><b><o:p></o:p></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>F16</b><o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>~14 GB<o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Reference Quality<o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Full <span class=SpellE>precision</span>, best <span
+  class=SpellE>quality</span><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Q8_0</b><o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>~7.5 GB<o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>High Quality<o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Minimal <span class=SpellE>quality</span> <span
+  class=SpellE>loss</span><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Q5_K_M</b><o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>~5.1 GB<o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=SpellE>Balanced</span><o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Good
+  quality/size trade-off<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Q4_K_M</b><o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>~4.4 GB<o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=SpellE>Recommended</span><o:p></o:p></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Best speed/<span class=SpellE>quality</span> balance<o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Recommended</span></b><span
+lang=EN-US style='mso-ansi-language:EN-US'>: Start with <b>Q4_K_M</b> for best
+overall performance.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='mso-ansi-language:EN-US'>Training
+Data (v1.2) <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b>Coverage:</b><o:p></o:p></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><b>FIPS</b>:
+     <span class=SpellE>Cryptographic</span> standards<o:p></o:p></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><b>SP
+     800</b>: Security <span class=SpellE>guidelines</span> and controls<o:p></o:p></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><b>SP
+     1800</b>: Practice <span class=SpellE>guides</span><o:p></o:p></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><b>IR</b>:
+     Technical reports<o:p></o:p></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='mso-ansi-language:EN-US'>CSWP</span></b><span
+     lang=EN-US style='mso-ansi-language:EN-US'>: White Papers (CSF 2.0, Zero
+     Trust, PQC, IoT, Privacy) <span style='mso-spacerun:yes'> </span>NEW!<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span class=SpellE><b>Stats</b></span>: 530,912 <span
+class=SpellE>examples</span> • 596 <span class=SpellE>documents</span> • 61,480
+working <span class=SpellE>references</span><o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+      </div>
+
+
+
+    </section>
+    <!-- /Features Section -->
+
+
+    
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Vertical solutions for Manufacturing and Utilities sector</p>
+        <h2>Pricing</h2>
+        <p>Choose between standard or advanced models. Send us an email for the official quote. We'll activate the platform to access to Models/Agents/Connectors/Datasets for the end customer. The platform will be immediately available as soon as the payment will be processed. 
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-activity"></i>
+          <!-- Basic Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card popular">
+                <div class="popular-badge">Most Popular</div>
+              <h3>Standard Models & Agents</h3>
+              <div class="price">
+                <span class="currency">Euro</span>
+                <span class="amount">10.000</span>
+                <span class="period">/ year</span>
               </div>
-              <div>
-                <h3>Cloud Carbon Footprint Calculator</h3>
-                <p>Architected to work for multiple cloud providers including, AWS, Google Cloud, and Microsoft Azure, and displays cloud carbon metrics in a single holistic view</p>
-                <a href="csrd.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
+              <p class="description">Yearly payment in advance. One price for any agent, integration module or dataset.</p>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-diagram-3"></i>
-              </div>
-              <div>
-                <h3>DMS Sharing Platform</h3>
-                <p>Document sharing and collaboration platform that puts you in full control of your documents in a way Saas solutions can’t.</p>
-                <a href="dms.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-easel"></i>
-              </div>
-              <div>
-                <h3>Grafana BIM</h3>
-                <p>Centralized digital platform that stores, manages, and shares project information, enhancing collaboration and efficiency among stakeholders throughout a construction project's lifecycle.</p>
-                <a href="grafanabim.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
+              <a href="mailto:contact@cyberaimodels.com?subject=REQUEST_INFO" class="btn btn-primary">
+                Request now
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Service Card -->
+          </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-clipboard-data"></i>
+          <!-- Standard Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card">
+              
+              <h3>Advanced Models & Agents</h3>
+              <div class="price">
+                <span class="currency">Euro</span>
+                <span class="amount">16.000</span>
+                <span class="period">/ year</span>
               </div>
-              <div>
-                <h3>Assets Inventory</h3>
-                <p> Asset management system that enables organizations to track and manage hardware, software, licenses, and consumables efficiently.</p>
-                <a href="#hero" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
+              <p class="description">Yearly payment in advance. One price for any agent, integration module or dataset.</p>
+
+
+              <a href="mailto:contact@cyberaimodels.com?subject=REQUEST_INFO" class="btn btn-light">
+                Request Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Service Card -->
+          </div>
+
 
         </div>
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section><!-- /Pricing Section -->
+    <!-- /Services Section -->
 
 
     <!-- Contact Section -->
@@ -340,25 +704,25 @@ For MISP, we support STIX/TAXII ingestion and the newer TAXII push flow so curat
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">CCSA Ltd</span>
+            <span class="sitename">Cambridge Cyber Security Analytics Ltd</span>
           </a>
           <div class="footer-contact pt-3">
+            <p>ASSIKURA Building Level 1</p>
+            <p>Trejqa tal-Ferrovija</p>
+            <p>Santa Venera</p>
+            <p>SVR9017</p>
+            <p>Malta</p>
             <p><strong>Email:</strong> <span>contact@cyberaimodels.com</span></p>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">CCSA Ltd</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cambridge Cyber Security Analytics Ltd</strong> <span>All Rights Reserved</span></p>
     </div>
 
   </footer>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
